@@ -57,14 +57,16 @@ body {
     flex-direction: column;
     align-items: center;
 
+
 }
 
 .hero-content h1 {
     width: 960px;
+    font-style: normal;
     font-family: Montserrat;
     font-size: 70px;
     font-weight: 500;
-    line-height: 77.7px;
+    line-height: 78px;
     text-align: center;
     color: #ffff;
 
@@ -172,9 +174,9 @@ body {
 }
 
 .second-section {
-    height: 714px; 
+    height: 714px;
     width: 1440px;
-    max-width: 1440px; 
+    max-width: 1440px;
 }
 
 .youtube-video {
@@ -187,8 +189,9 @@ body {
 .founder-box {
     width: 739px;
     max-width: 739px;
-    box-sizing: content-box; 
-    height: 322px; ;
+    box-sizing: content-box;
+    height: 322px;
+    ;
     border-radius: 25px;
     background-color: #141414;
     border: 1px solid #313131;
@@ -201,6 +204,7 @@ body {
     justify-content: space-between;
 
 }
+
 .founder-box p {
     color: #ffff;
     /* width: 582px; */
@@ -208,7 +212,7 @@ body {
     min-width: 582px; */
     font-weight: 400;
     line-height: 23px;
-    font-family: montserrat;
+    font-family: Montserrat;
     font-size: 16px;
     text-align: center;
 }
@@ -260,4 +264,143 @@ body {
     border-radius: 25px;
     border: 1px solid;
 
+}
+
+.brands p {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.2px;
+    color: #A6A6A6;
+}
+
+.brands {
+    margin-top: 122px;
+    height: 200px;
+    background-image: url(./Assests//Gradient\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works-section {
+    text-align: center;
+    margin-top: 137px;
+}
+
+.how-it-works-btn {
+    text-align: center;
+    width: 135px;
+    height: 43px;
+    border-radius: 30px;
+    background-color: #171802;
+    border: 1px solid #363804;
+    color: #FFBE0D;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.how-it-works-text h1 {
+    font-family: Montserrat;
+    font-size: 54px;
+    font-weight: 200;
+    line-height: 59.94px;
+    text-align: center;
+    color: #ffff;
+
+}
+
+.how-it-works-text p {
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* text-align: center; */
+    color: #ffff;
+    width: 522px;
+    height: 47px;
+
+
+}
+
+.how-it-works-text {
+    min-height: 236.55px;
+
+}
+
+.how-it-works-cards {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 1,240px;
+    height: 209.31px;
+    max-height: 209px;
+    gap: 22px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.how-it-works-cards .card{
+    max-width: 398px;
+    width: 398.66px;
+    height: 209.31px;
+    border-radius: 25px;
+    border: 1px solid #313131;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.how-it-works-cards .card h3{
+width: 211px;
+height: 27.94px;
+max-height: 27.94px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+
+}
+.how-it-works-cards-p {
+    width:47px;
+height:47px;
+/* top: 25px;
+left: 29px; */
+padding: 11.81px 18.96px 11.99px 18.95px;
+border-radius: 23.5px;
+border: 1px solid #363804;
+background-color: #171802;
+color: #FFBE0D;
+/* margin-top: 25px; */
+padding-bottom: 30px;
+
+}
+
+.how-it-works-cards-div{
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+.how-it-works-cards h3{
+    margin-left: 15px;
+    /* padding-left: 25px; */
+}
+
+.how-it-works-cards .text{
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.2px;
+text-align: left;
+margin-left: 15px;
+color: #A6A6A6;
 }
