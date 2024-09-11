@@ -18,6 +18,8 @@
     <!---bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!---aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="background-color: black;">
@@ -29,7 +31,7 @@
     </div>
 
     <!--navbar-->
-    <nav style="position: fixed; top: 0;" class="navbar top-0 navbar-expand-lg ">
+    <nav id="myNavbar" style="position: fixed; top: 0;" class="navbar top-0 navbar-expand-lg ">
         <div class="container-fluid">
             <div class="navbar-brand" style="margin-left: 91px;" href="#"> <img
                     src="./Assests/PB Logo with Title-01 1.png" alt="Bootstrap" width="51px" height="auto">
@@ -72,7 +74,7 @@
 <!---hero section------>
 
 
-    <div class="hero-content">
+    <div data-aos-duration="1000" class="hero-content" data-aos="fade-up">
         <div class="hero-content-button">
 
             <div class="rating-container ">
@@ -111,14 +113,14 @@
 
 <!-------second section------->
 
-    <div style="margin-top: 136px; padding-left: 100px; padding-right: 100px;"
-        class="div second-section container-fluid ">
+     <div  data-aos="fade-right"  data-aos-duration="800"  style="margin-top: 136px; padding-left: 100px; padding-right: 100px;"
+        class="div second-section d-flex  flex-column justify-content-center align-items-center container-fluid ">
         <div style="width: 1240px;" class="row youtube-section">
-            <div class="col youtube-video">
-                <img style="border-radius: 25px; width: 479px; max-width: 479px;" src="./Assests//Background+Border.png"
+            <div class="col-lg-4 col-md-12 youtube-video">
+                <img style="border-radius: 25px; width: 100%; max-width: 479px;" src="./Assests//Background+Border.png"
                     alt="youtube video">
             </div>
-            <div class="col founder-box">
+            <div class="col-lg-8 col-md-12 founder-box">
                 <div class="left-leaf">
                     <img style="width: 37px; height: 82px;" src="./Assests/left.png" alt="">
                 </div>
@@ -165,9 +167,9 @@
         </div>
 
 
-    </div>
+    </div> 
     <!---brandslogo section-->
-    <div class="div brands container-fluid">
+    <div data-aos="fade-left"   data-aos-duration="800" class="div brands container-fluid">
         <p style="margin-bottom: 60px; margin-left: -55px;">As seen and loved on:</p>
         <div style="position: relative;" class="row d-flex justify-content-center">
 
@@ -199,7 +201,7 @@
     </div>
     <!-----pay and get started-->
     <div class="div how-it-works-section">
-        <div class="div how-it-works-text">
+        <div data-aos="zoom-in"  data-aos-duration="1000" class="div how-it-works-text">
 
             <button class="how-it-works-btn">
                 How it works?
@@ -212,7 +214,7 @@
             </div>
         </div>
         <div class="div how-it-works-cards row">
-            <div class="card col-lg-3">
+            <div  data-aos="flip-up" data-aos-duration="500" class="card col-lg-3">
                 <div class="how-it-works-cards-div">
                     <p class="how-it-works-cards-p"> 1</p>
 
@@ -221,7 +223,7 @@
                 <p class="text">Select a plan that fits your needs and
                     jump on a onboarding call.</p>
             </div>
-            <div class="card col-lg-3">
+            <div data-aos="flip-up" data-aos-duration="500" class="card col-lg-3">
                 <div class="div how-it-works-cards-div">
                     <p class="how-it-works-cards-p">2</p>
 
@@ -231,7 +233,7 @@
                 <p class="text">List your first task on our shared Trello
                     board by specifying the requirements.</p>
             </div>
-            <div class="card col-lg-3">
+            <div data-aos="flip-up" data-aos-duration="500" class="card col-lg-3">
                 <div class="div  how-it-works-cards-div ">
                     <p class="how-it-works-cards-p">3</p>
 
@@ -243,17 +245,17 @@
         </div>
     </div>
     <!--work-portfolio-->
-    <div style="margin-top: 200px;" class="div Portfolio-container container-fluid">
-        <div class=" Portfolio-intro">
+    <div style="margin-top: 200px;" class="div portfolio-container container-fluid">
+        <div class="Portfolio-intro">
             <div class="row d-flex">
                 <div class="div Portfolio-btn"><button>Portfolio</button></div>
             </div>
-            <div class="div d-flex flex-row  ">
+            <div class="div d-flex flex-row portfolio-section" >
                 <div class="div">
-                    <h1>Exceptional work
+                    <h1 id="Exceptional">Exceptional work
                         you deserve</h1>
                 </div>
-                <div style="position: relative; width: 400px;" class="div">
+                <div style="position: relative; width: 400px;" class="div portfolio-text">
                     <p>
                         From tech startups to healthcare giants, e-
                         commerce pioneers to edtech, we've left our
@@ -267,9 +269,10 @@
 
 
         </div>
-        <div style="margin-top: 54px;" class=" container-fluid portfolio-cards">
+        <div style="margin-top: 54px;" class=" container-fluid d-flex align-items-center justify-content-center portfolio-cards">
+           <div class="div">
             <div class="row">
-                <div class="col-md-4 col-lg-4">
+                <div data-aos="zoom-in" class="col-md-4 col-lg-4">
                     <img src="./Assests/portfolio/project2-8g0cod9l.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>Slipery moneys - e-
@@ -277,7 +280,7 @@
                             risk industries</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div  data-aos="zoom-in" class="col-md-4 col-lg-4">
                     <img src="./Assests/portfolio/project6-C2twDe5Z.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>Hybrid capital - digital
@@ -287,7 +290,7 @@
 
 
                 </div>
-                <div class="col-md-4  col-lg-4">
+                <div  data-aos="zoom-in" class="col-md-4  col-lg-4">
                     <img src="./Assests/portfolio/project3-IgW1Pkkw.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>Betero - sports betting
@@ -295,15 +298,15 @@
                     </div>
                 </div>
             </div>
-            <div style="margin-top: 22px;" class="row">
-                <div class="col-md-4  col-lg-4">
+            <div  style="margin-top: 22px;" class="row">
+                <div  data-aos="zoom-in" class="col-md-4  col-lg-4">
                     <img src="./Assests/portfolio//project5-DSLPbhiU.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>Exec - employees financial
                             wellness saas</p>
                     </div>
                 </div>
-                <div class="col-md-4  col-lg-4">
+                <div  data-aos="zoom-in" class="col-md-4  col-lg-4">
                     <img src="./Assests/portfolio/project1-DyFZYTNM.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>SVoltoge - accessible clean
@@ -313,7 +316,7 @@
                     <div class="row"></div>
 
                 </div>
-                <div class="col-md-4 col-lg-4">
+                <div  data-aos="zoom-in" class="col-md-4 col-lg-4">
                     <img src="./Assests/portfolio/project4-BhR40iZf.jpg.png" alt="">
                     <div class="div portfolio-cards-text">
                         <p>Hyperbolic - a decentralized
@@ -321,6 +324,7 @@
                     </div>
                 </div>
             </div>
+           </div>
 
         </div>
     </div>
@@ -330,14 +334,14 @@
         </button>
     </div>
     <!--------------benefits section--------------------->
-    <div style="margin-top: 199px;" class="div Benefits-section">
+    <div data-aos="zoom-in"   data-aos-duration="1000" style="margin-top: 199px;" class="div Benefits-section">
         <div class="div Benefits-section-start d-flex flex-column justify-content-center align-items-center">
             <button class="btn">Benefits</button>
-            <h1>Unlock a world of design
+            <h1 class="unlock">Unlock a world of design
                 potential with us</h1>
 
         </div>
-        <div class="div Benefits-cards-list">
+        <div class="div Benefits-cards-list container-fluid">
             <div class="row">
                 <div class="col-md-4 col-lg-4">
                     <div class="benefits-image">
@@ -425,7 +429,7 @@
         class="services-container container-fluid d-flex justify-content-center flex-column align-items-center ">
         <div class="service-text text-center">
             <button class="btn">Services</button>
-            <h1>All you want,
+            <h1  data-aos="zoom-in" >All you want,
                 delivered on time</h1>
         </div>
         <div class="services-wrapper">
@@ -435,8 +439,8 @@
                     <div class="  gradient-start"></div>
 
                     <div class="row ">
-                        <div class="col d-flex flex-row ">
-                            <div class="service-name">UI/UX design</div>
+                        <div data-aos="flip-left"  data-aos-duration="600" class="col d-flex flex-row ">
+                            <div   class="service-name">UI/UX design</div>
                             <div class="service-name ">Graphic design</div>
                             <div class="service-name ">Logo design</div>
                             <div class="service-name ">Branding</div>
@@ -450,7 +454,7 @@
                 <div style="margin-top: 17px; padding-left: -50px; position: relative;" class="d-flex flex-row">
                     <div class="gradient-start"></div>
                     <div class="row">
-                        <div class="col d-flex">
+                        <div  data-aos="flip-left"  data-aos-duration="600"  class="col d-flex">
                             <div class="service-name">UI/UX design</div>
                             <div class="service-name">Graphic design</div>
                             <div class="service-name">Logo design</div>
@@ -481,7 +485,7 @@
         </div>
         <div class="pricing-cards-list container-fluid">
             <div class="row">
-                <div style="width: 398px;" class="col-lg-3 pricing-card">
+                <div data-aos="fade-right"  data-aos-duration="1000" style="width: 398px;" class="col-lg-3 pricing-card">
                     <p class="plan-name">STANDARD</p>
                     <div class="div plan-price d-flex flex-row">
                         <h1>$2,150</h1>
@@ -510,7 +514,7 @@
 
                     </div>
                 </div>
-                <div style="width: 398px; position: relative;" class="col-lg-3 pricing-card">
+                <div data-aos="zoom-out" data-aos-duration="1000" style="width: 398px; position: relative;" class="col-lg-3 pricing-card">
                     <div class="div faster">
                         <p> Faster</p>
                         <img class="mx-1" src="./Assests/faster.png" alt="">
@@ -543,8 +547,8 @@
 
                     </div>
                 </div>
-                <div style="width: 398px;" class="col-lg-3 d-flex flex-column">
-                    <div class="div project-based">
+                <div data-aos="fade-left" data-aos-duration="1000" style="width: 398px;" class="col-lg-3 d-flex flex-column">
+                    <div  class="div project-based">
                         <p class="plan-name">PROJECT-BASED</p>
                         <P class="project-based-para">For a custom fee delivered in
                             milestones. Ideal for specific goals.
@@ -558,7 +562,7 @@
                         <div style="margin-left: 25px;" class="div"> <button class="btn-demo ">Send email</button>
                         </div>
                     </div>
-                    <div class="div refer">
+                    <div  class="div refer">
                         <h1>Refer & earn</h1>
                         <P>Receive $150 for each referral!</P>
                         <button class="btn-demo">Join now</button>
@@ -570,7 +574,7 @@
     </div>
     </div>
     <!-------Frequeny Added questions-------->
-    <div style="margin-top: 190px;" class="div faq-container">
+    <div  data-aos="fade-right"  data-aos-duration="600" style="margin-top: 190px;" class="div faq-container">
         <div class="div d-flex flex-column justify-content-center align-items-center">
             <div class="faq-header">
                 <div class="div d-flex align-items-center justify-content-center">
@@ -644,7 +648,7 @@
     <!--------Testimonials-section-------->
 
 
-    <div class="testimonials-container ">
+    <div  data-aos="fade-left"  data-aos-duration="600" class="testimonials-container ">
         <div class="testimonial">
             <div class="div d-flex justify-content-center">
                 <button>Testimonials</button>
@@ -872,5 +876,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
+    <!--Aos cdn-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./script.js"></script>
 </html>
